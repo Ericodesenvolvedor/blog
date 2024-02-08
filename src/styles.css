@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+body {
+  background-color: var(--color-3);
+}
+
+:root {
+  font-size: 62.5%;
+ 
+  --font-space: 'Space Grotesk', sans;
+  --font-inter: 'Inter', sans-serif;;
+  --color-1: #17171A; 
+  --color-2: #AFABB6;
+  --color-3: #09090B;
+  --text-white: #ffffff;
+  --secondary-color: #E07B67;
+  --background-search-input: #202024;
+}
+
+header {
+  background-color: var(--color-1);
+  padding-block: 6.4rem;
+  padding-inline: 3.2rem;
+}
+
+.container {
+  max-width: 1216px;
+  width: 100%;
+  margin: auto;
+}
+
+.brand {
+  font-family: var(--font-space);
+  font-size: 4rem;
+  font-weight: 500;
+
+  text-align: center;
+  margin-bottom: 3.6rem;
+  color: var(--text-white);
+}
+
+.brand span {
+  color: var(--secondary-color);
+}
+
+.search-field {
+  background-color: var(--background-search-input);
+  height: 6.4rem;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  
+  font-size: 3.2rem;
+  padding-left: 2.4rem;
+  border-radius: 8px;
+}
+
+.search-field input {
+  width: 100%;
+  height: 100%;
+
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+
+  font-family: var(--font-inter);
+  color: var(--color-2);
+  font-size: 2rem;
+}
+
+.search-field input::placeholder {
+  color: var(--color-2);
+}
+
+.search-field i {
+  color: var(--secondary-color);
+}
+
+main {
+  padding-inline: 3.2rem;
+  padding-block: 8rem;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+main article {
+  background-color: var(--color-1);
+  padding: 4rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+main article:hover {
+  border-color: var(--secondary-color);
+}
+
+main article .top {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main article .top span {
+  font-family: var(--font-inter);
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+}
+
+main article .top i {
+  font-size: 3.2rem;
+  color: var(--secondary-color);
+}
+
+main article .bottom h2 {
+  font-family: var(--font-space);
+  font-size: 2.4rem;
+  color: var(--text-white);
+  margin-bottom: 1.6rem;
+}
+
+main article .bottom p {
+  font-family: var(--font-inter);
+  font-size: 2rem;
+  color: var(--color-2);
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  header, main {
+    padding-block: 5.6rem;
+  }
+
+  main article .top span {
+    font-size: 1.4rem;
+  }
+
+  main article .top i {
+    font-size: 2.4rem;
+  }
+
+  main article .bottom h2 {
+    font-size: 2rem;
+  }
+  
+  main article .bottom p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  main article {
+    padding: 2.4rem;
+  }
+  
+  main article .top span {
+    font-size: 1.2rem;
+  }
+
+  main article .top i {
+    font-size: 1.5rem;
+  }
+  
+  main article .bottom p {
+    font-size: 1.4rem;
+  }
+}
