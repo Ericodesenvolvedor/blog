@@ -11,7 +11,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Estrutura HTML.
 - [x] Estilização CSS.
 - [x] Adicionar funcionalidade de busca por titulo de postagem.
-- [ ] Salvar curtida da postagens no localStorage.
+- [x] Salvar curtida da postagens no localStorage.
 
 ### Preview
 
